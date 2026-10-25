@@ -37,3 +37,12 @@ console:
 
 down:
     docker compose down
+
+package-vsix:
+    yarn translate
+    yarn package
+    mkdir -p build
+    yarn vsce package --no-dependencies --out build/vscode-just-local.vsix
+
+install-local: package-vsix
+    code --install-extension build/vscode-just-local.vsix --force
