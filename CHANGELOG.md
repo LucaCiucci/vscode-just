@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Added
+
+- Nushell syntax highlighting in shebang recipes, using the grammar from an installed Nushell extension
+
 ## [0.10.2] - 2026-06-10
 
 ### Changed 

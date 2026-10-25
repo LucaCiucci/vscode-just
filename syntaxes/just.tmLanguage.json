@@ -699,6 +699,22 @@
           ]
         },
         {
+          "comment": "Nushell",
+          "begin": "^\\s+(#!/usr/bin/env\\s+(?:-S\\s+)?nu(?:\\s.*)?)$",
+          "while": "^(?=\\s*$|\\s)",
+          "beginCaptures": {
+            "1": {
+              "name": "comment.line.number-sign.shebang.just"
+            }
+          },
+          "contentName": "source.nushell",
+          "patterns": [
+            {
+              "include": "source.nushell"
+            }
+          ]
+        },
+        {
           "comment": "Perl",
           "begin": "^\\s+(#!/usr/bin/env\\s+(?:-S\\s+)?perl.*)$",
           "while": "^(?=\\s*$|\\s)",

@@ -66,6 +66,7 @@
         "embeddedLanguages": {
           "source.js": "javascript",
           "source.ts": "typescript",
+          "source.nushell": "nushell",
           "source.perl": "perl",
           "source.python": "python",
           "source.ruby": "ruby",
